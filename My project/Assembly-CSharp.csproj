@@ -68,6 +68,7 @@
     <Compile Include="Assets/Scripts/PlayerShooting.cs" />
     <Compile Include="Assets/Scripts/WaveSpawner.cs" />
     <Compile Include="Assets/Scripts/PlayerMovement.cs" />
+    <Compile Include="Assets/Scripts/TestMovement.cs" />
     <Compile Include="Assets/Scripts/ForwardMovement.cs" />
     <Compile Include="Assets/Scripts/AutoDestroy.cs" />
     <Compile Include="Assets/Scripts/EnemyForwardMovement.cs" />

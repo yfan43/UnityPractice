@@ -8,11 +8,11 @@ public class PlayerShooting : MonoBehaviour
 {
     public GameObject prefab;
     public GameObject shootpoint;
-    void Start()
-    {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
-    }
+    // void Start()
+    // {
+    //     Cursor.visible = false;
+    //     Cursor.lockState = CursorLockMode.Locked;
+    // }
     public void OnFire(InputValue value)
     {
         if (value.isPressed)
@@ -27,7 +27,10 @@ public class PlayerShooting : MonoBehaviour
     // {
     //     if (Input.GetKeyDown(KeyCode.Mouse0))
     //     {
-    //         Instantiate(prefab, shootpoint.transform.position, shootpoint.transform.rotation);
+    //         print("Fire");
+    //         GameObject clone = Instantiate(prefab);
+    //         clone.transform.position = shootpoint.transform.position;
+    //         clone.transform.rotation = shootpoint.transform.rotation;
     //     }
     // }
 }
