@@ -5,18 +5,28 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField]
-    private float speed;
-    [SerializeField]
-    private float rotationSpeed;
+    public float speed;
+    public float rotationSpeed;
     private Vector2 movementValue;
     private float lookValue;
+    private Rigidbody rigidbody;
 
-   //  private void Awake()
-   //  {
-   //      Cursor.visible = false;
-   //      Cursor.lockState = CursorLockMode.Locked;
-   //  }
+    private void Awake()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
+        rigidbody = GetComponent<Rigidbody>();
+    }
+    public void OnMove(InputValue value)
+    {
+      movementValue = value.Get<Vector2>() * speed;
+    }
+
+    public void onLook(InputValue value)
+    {
+       lookValue = value.Get<Vector2>().x * rotationSpeed;
+    }
 
    //  public void OnMove(InputValue value)
    //  {
@@ -37,8 +47,10 @@ public class PlayerMovement : MonoBehaviour
    //     transform.Rotate(0, lookValue * Time.deltaTime, 0);
    //  }
    void Update() {
-      if (Input.GetKey(KeyCode.W)) {
-         transform.Translate(0, 0, speed * Time.deltaTime);
-      }
+      // if (Input.GetKey(KeyCode.W)) {
+      //    transform.Translate(0, 0, speed * Time.deltaTime);
+      // }
+      rigidbody.AddRelativeForce(movementValue.x * Time.deltaTime, 0, movementValue.y * Time.deltaTime);
+      rigidbody.AddRelativeTorque(0, lookValue * Time.deltaTime, 0);
    }
 }

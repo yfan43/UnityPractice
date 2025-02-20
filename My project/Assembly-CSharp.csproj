@@ -64,11 +64,14 @@
     <Analyzer Include="/Applications/Unity/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Scripts/Life.cs" />
     <Compile Include="Assets/Scripts/MyFirstScript.cs" />
     <Compile Include="Assets/Scripts/PlayerShooting.cs" />
     <Compile Include="Assets/Scripts/WaveSpawner.cs" />
     <Compile Include="Assets/Scripts/PlayerMovement.cs" />
     <Compile Include="Assets/Scripts/TestMovement.cs" />
+    <Compile Include="Assets/Scripts/ContactDestroyer.cs" />
+    <Compile Include="Assets/Scripts/ContactDamager.cs" />
     <Compile Include="Assets/Scripts/ForwardMovement.cs" />
     <Compile Include="Assets/Scripts/AutoDestroy.cs" />
     <Compile Include="Assets/Scripts/EnemyForwardMovement.cs" />
