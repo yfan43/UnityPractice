@@ -65,16 +65,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/Life.cs" />
+    <Compile Include="Assets/Scripts/ScoreManager.cs" />
+    <Compile Include="Assets/Scripts/ScoreOnDeath.cs" />
     <Compile Include="Assets/Scripts/MyFirstScript.cs" />
     <Compile Include="Assets/Scripts/PlayerShooting.cs" />
+    <Compile Include="Assets/Scripts/WavesGameMode.cs" />
+    <Compile Include="Assets/Scripts/EnemiesManager.cs" />
     <Compile Include="Assets/Scripts/WaveSpawner.cs" />
     <Compile Include="Assets/Scripts/PlayerMovement.cs" />
     <Compile Include="Assets/Scripts/TestMovement.cs" />
+    <Compile Include="Assets/Scripts/Enemy.cs" />
     <Compile Include="Assets/Scripts/ContactDestroyer.cs" />
     <Compile Include="Assets/Scripts/ContactDamager.cs" />
     <Compile Include="Assets/Scripts/ForwardMovement.cs" />
     <Compile Include="Assets/Scripts/AutoDestroy.cs" />
     <Compile Include="Assets/Scripts/EnemyForwardMovement.cs" />
+    <Compile Include="Assets/Scripts/WavesManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
