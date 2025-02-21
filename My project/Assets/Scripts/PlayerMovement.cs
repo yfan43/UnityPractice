@@ -50,6 +50,9 @@ public class PlayerMovement : MonoBehaviour
       // if (Input.GetKey(KeyCode.W)) {
       //    transform.Translate(0, 0, speed * Time.deltaTime);
       // }
+      // float mouseX = Input.GetAxis("Mouse X");
+      // transform.Rotate(0, mouseX * rotationSpeed * Time.deltaTime, 0);
+      
       rigidbody.AddRelativeForce(movementValue.x * Time.deltaTime, 0, movementValue.y * Time.deltaTime);
       rigidbody.AddRelativeTorque(0, lookValue * Time.deltaTime, 0);
    }
