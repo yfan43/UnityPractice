@@ -8,7 +8,7 @@ public class ExplosionOnDeath : MonoBehaviour
 
     void Awake() {
         var life = GetComponent<Life>();
-        life.onDeath.AddListener(onDeath);
+        life.onDeath.AddListener(OnDeath);
     }
 
     void OnDeath() {

@@ -1,5 +1,13 @@
 fileFormatVersion: 2
 guid: 41f081d5c6d286c47a33bed3f84de79a
+AssetOrigin:
+  serializedVersion: 1
+  productId: 262897
+  packageName: Mini Simple Characters | Skeleton | Free Demo
+  packageVersion: 1.0
+  assetPath: Assets/Mini Simple Characters Skeleton Demo/Models/mini simple skeleton
+    demo.fbx
+  uploadId: 606480
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -16,8 +24,6 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -48,7 +54,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -429,11 +435,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 262897
-  packageName: Mini Simple Characters | Skeleton | Free Demo
-  packageVersion: 1.0
-  assetPath: Assets/Mini Simple Characters Skeleton Demo/Models/mini simple skeleton
-    demo.fbx
-  uploadId: 606480
