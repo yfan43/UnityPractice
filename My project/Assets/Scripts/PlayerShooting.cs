@@ -8,6 +8,7 @@ public class PlayerShooting : MonoBehaviour
 {
     public GameObject prefab;
     public GameObject shootpoint;
+    // public AudioSource shootSound;
     // void Start()
     // {
     //     Cursor.visible = false;
@@ -20,6 +21,7 @@ public class PlayerShooting : MonoBehaviour
             GameObject clone = Instantiate(prefab);
             clone.transform.position = shootpoint.transform.position;
             clone.transform.rotation = shootpoint.transform.rotation;
+            // shootSound.Play();
         }
     }
     // Update is called once per frame
