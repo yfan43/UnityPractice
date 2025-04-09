@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Assets/Scripts/LifeBar.cs" />
     <Compile Include="Assets/Scripts/Life.cs" />
+    <Compile Include="Assets/Scripts/QuitButton.cs" />
     <Compile Include="Assets/Scripts/ScoreManager.cs" />
     <Compile Include="Assets/Scripts/MyFirstScript.cs" />
     <Compile Include="Assets/Scripts/WavesGameMode.cs" />
@@ -83,7 +84,9 @@
     <Compile Include="Assets/Scripts/EnemiesManager.cs" />
     <Compile Include="Assets/Scripts/PlayerMovement.cs" />
     <Compile Include="Assets/Scripts/TestMovement.cs" />
+    <Compile Include="Assets/Scripts/PlayerBulletsUI.cs" />
     <Compile Include="Assets/Scripts/AutoDestroy.cs" />
+    <Compile Include="Assets/Scripts/Pause.cs" />
     <Compile Include="Assets/Scripts/EnemyForwardMovement.cs" />
     <Compile Include="Assets/Scripts/WavesManager.cs" />
   </ItemGroup>

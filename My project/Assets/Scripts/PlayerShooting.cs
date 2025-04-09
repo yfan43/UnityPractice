@@ -8,6 +8,8 @@ public class PlayerShooting : MonoBehaviour
 {
     public GameObject prefab;
     public GameObject shootpoint;
+
+    public int bulletsAmount;
     // public AudioSource shootSound;
     // void Start()
     // {
@@ -16,8 +18,9 @@ public class PlayerShooting : MonoBehaviour
     // }
     public void OnFire(InputValue value)
     {
-        if (value.isPressed)
+        if (value.isPressed && bulletsAmount > 0 && Time.timeScale > 0)
         {
+            bulletsAmount--;
             GameObject clone = Instantiate(prefab);
             clone.transform.position = shootpoint.transform.position;
             clone.transform.rotation = shootpoint.transform.rotation;
